@@ -1,20 +1,22 @@
 body {
 	margin: 0;
 	font-family: "Times New Roman", "宋体", Times, Arial, Helvetica, serif;
+	background-color: aliceblue;
 }
 ul.header {
 	margin: 0;
-	padding: 0;
+	height: auto;
 	overflow: hidden;
 	list-style-type: none;
 	background-image: linear-gradient(to right, #0981D8, #59cde9);
 	background-color: #0981D8;
 }
-.header>li{
+.header li{
 	float: right;
 }
 .header>li>a{
-	padding: 11px 16px;
+	margin: 0;
+	padding: 15px 16px;
 	display: block;
 	color: white;
 	text-align: center;
@@ -25,6 +27,12 @@ ul.header {
 }
 a.active{
 	background-color: orangered;
+
+}
+.tframe{
+	margin: 0 0 15px 20px;
+	border-style: ridge;
+	border-width: 4px;
 }
 .titlemain {
 	color: #00FFAF;
