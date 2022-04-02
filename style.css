@@ -8,31 +8,30 @@ ul.header {
 	height: auto;
 	overflow: hidden;
 	list-style-type: none;
-	background-image: linear-gradient(to right, #0981D8, #59cde9);
 	background-color: #0981D8;
 }
-.header li{
+.header li {
 	float: right;
 }
-.header>li>a{
+.header > li > a {
 	margin: 0;
 	padding: 15px 16px;
 	display: block;
 	color: white;
 	text-align: center;
-    text-decoration: none;
+	text-decoration: none;
 }
-.header>li>a:hover:not(.active){
+.header > li > a:hover:not(.active) {
 	background-color: chocolate;
 }
-a.active{
-	background-color: orangered;
-
+a.active {
+	background-color: darkblue;
 }
-.tframe{
+a.user {
+	background-color: darkorange;
+}
+.titleframe {
 	margin: 0 0 15px 20px;
-	border-style: ridge;
-	border-width: 4px;
 }
 .titlemain {
 	color: #00FFAF;
@@ -42,11 +41,23 @@ a.active{
 .titlesecond {
 	text-align: left;
 }
-p>code {
-	font-size: 26px;
-	color: #000000;
-	font-weight: 400;
+/*创建弹性盒子*/
+.flexc {
+	display: flex;
+	margin: 20px 20px 0 20px;
+
+	flex-wrap: wrap;
+	align-content: center;
+	background-color: lightgrey;
 }
+.flexitem {
+	background-color: cornflowerblue;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+	align-self: center;
+}
+/*form> input class=frame 表单开始------*/
 input.frame {
 	padding: 10px 30px;
 	margin: 1px 15px;
@@ -54,6 +65,7 @@ input.frame {
 	border-radius: 9px;
 	color: #D17100;
 }
+/*form> input class=button*/
 input.button {
 	background-color: #FF002E;
 	color: #FFFFFF;
@@ -63,6 +75,7 @@ input.button {
 	margin-top: 15px;
 	margin-left: 10px;
 }
+/*表单背景*/
 form {
 	padding: 20px 20px;
 	border-radius: 15px;
@@ -70,24 +83,27 @@ form {
 	margin: auto;
 	width: 300px;
 	color: #FFFFFF;
-	background-image: -webkit-linear-gradient(to right, #002E5D, #002E5D, #2774ae);  /* Chrome 10-25, Safari 5.1-6 */
 	background-image: linear-gradient(to right, #002E5D, #002E5D, #2774ae); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+/*-----表单结束-----*/
 table {
-	border-collapse: collapse;
+	border-collapse: collapse;/*将表格边框变为单一*/
 	text-align: center;
-	vertical-align: bottom;
+	vertical-align: bottom;/*文字底部对齐*/
 }
+/*tr,td行*/
 td {
 	border: 1px solid green;
 	width: 500px;
 	height: 100px;
 	background-color: #E8FFE8;
 }
+/*tr,th表头行*/
 th {
-	background-color: darkgreen;
+	background-color: darkgreen;/*表头背景填充*/
 	color: White;
 }
+/*左蓝色标签边框*/
 .leftw {
 	border: 1px solid #00AFFF;
 	border-left-width: 20px;
